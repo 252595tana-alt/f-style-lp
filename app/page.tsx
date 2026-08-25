@@ -100,7 +100,7 @@ export default function Home() {
 
       <section id="top" className="hero">
         <div className="hero-media" aria-hidden="true">
-          <video autoPlay loop muted playsInline preload="metadata" poster="/instagram-grid-01.png">
+          <video autoPlay loop muted playsInline preload="metadata" poster="/concept-custom-car.jpg">
             <source src="/hero-video.mp4" type="video/mp4" />
           </video>
         </div>
@@ -138,7 +138,7 @@ export default function Home() {
         <SectionTitle number="01" eyebrow="CUSTOM" title="CUSTOM IS IN THE DETAILS." lead="見た目だけでは終わらない。乗るたびに違いが伝わる、一台へ。" />
         <div className="custom-grid">
           <figure className="custom-photo reveal">
-            <img src="/instagram-grid-02.png" alt="F-styleのリフトと整備設備、工具の写真" loading="lazy" />
+            <img src="/concept-custom-car.jpg" alt="カスタム車両を表現したイメージ画像" loading="lazy" />
             <figcaption><span>DETAIL / 001</span> BUILT WITH BALANCE</figcaption>
           </figure>
           <div className="custom-copy reveal">
@@ -153,9 +153,9 @@ export default function Home() {
           </div>
         </div>
         <div className="photo-strip" aria-label="施工・店舗写真">
-          <figure className="photo-wide reveal"><img src="/instagram-grid-01.png" alt="F-styleの車両と店舗写真" loading="lazy" /></figure>
-          <figure className="photo-tall reveal"><img src="/instagram-grid-02.png" alt="F-styleの整備設備とガレージ写真" loading="lazy" /></figure>
-          <figure className="photo-detail reveal"><img src="/instagram-grid-02.png" alt="F-styleこだわりの工具と設備" loading="lazy" /></figure>
+          <figure className="photo-wide reveal"><img src="/concept-custom-car.jpg" alt="洗練されたカスタム車両のイメージ画像" loading="lazy" /></figure>
+          <figure className="photo-tall reveal"><img src="/concept-service-garage.jpg" alt="整備ガレージのイメージ画像" loading="lazy" /></figure>
+          <figure className="photo-detail reveal"><img src="/concept-tool-detail.jpg" alt="整備工具のイメージ画像" loading="lazy" /></figure>
         </div>
       </section>
 
@@ -175,7 +175,7 @@ export default function Home() {
 
       <section className="maintenance section-pad">
         <div className="maintenance-visual reveal">
-          <img src="/instagram-grid-02.png" alt="F-styleの整備工場とリフト設備" loading="lazy" />
+          <img src="/concept-service-garage.jpg" alt="車検・整備設備を表現したイメージ画像" loading="lazy" />
           <span>QUALIFIED / EQUIPPED / RELIABLE</span>
         </div>
         <div className="maintenance-copy reveal">
@@ -198,7 +198,7 @@ export default function Home() {
       <section className="works section-pad">
         <SectionTitle number="05" eyebrow="PROFESSIONAL / WORKS" title="仕事の質が見えるガレージ。" lead="資格、設備、施工の積み重ねが、F-styleの品質です。" />
         <div className="works-layout">
-          <div className="works-image reveal"><img src="/instagram-grid-01.png" alt="F-styleの店舗と施工車両" loading="lazy" /></div>
+          <div className="works-image reveal"><img src="/concept-tool-detail.jpg" alt="丁寧な整備品質を表現した工具のイメージ画像" loading="lazy" /></div>
           <div className="works-copy reveal">
             <p className="large-copy">設備と施工の積み重ねで、信頼をつくる。</p>
             <p>F-styleは、車を長く安心して任せられる地域のカーライフショップを目指しています。</p>
@@ -235,7 +235,7 @@ export default function Home() {
             <a className="map-link" href={siteConfig.mapUrl} onClick={() => trackEvent('google_map_click')} target="_blank" rel="noreferrer"><span>Google Mapで見る</span><i aria-hidden="true" /></a>
           </div>
           <div className="access-image reveal">
-            <img src="/instagram-grid-01.png" alt="F-styleの店舗と看板" loading="lazy" />
+            <img src="/concept-shop-exterior.jpg" alt="カーショップ外観のイメージ画像" loading="lazy" />
             <span>KOKUFUCHO / TOKUSHIMA</span>
           </div>
         </div>
