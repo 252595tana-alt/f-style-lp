@@ -131,8 +131,9 @@ nav a:hover, .header-contact:hover { color: var(--acid); }
 .price-card h3 { font-size: clamp(23px, 2.5vw, 32px); font-weight: 600; margin: 0; }
 .price-card strong { border-top: 1px solid var(--line); display: block; font-size: clamp(21px, 2.5vw, 30px); font-weight: 500; margin-top: 34px; padding-top: 24px; }
 .price-card span { color: #535758; display: block; line-height: 1.9; margin-top: 30px; }
-.price-note { background: var(--acid); }
-.price-note p, .price-note span { color: #2c310f; }
+.price-note { background: #eceee9; border-top: 5px solid var(--acid); }
+.price-note p { color: #656a69; }
+.price-note span { color: #535758; }
 
 .works { background: var(--graphite); color: var(--white); }
 .works .section-lead, .works .section-kicker p { color: #a6aaab; }
