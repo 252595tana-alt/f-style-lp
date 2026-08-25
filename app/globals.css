@@ -85,10 +85,16 @@ nav a:hover, .header-contact:hover { color: var(--acid); }
 .dark-band { background: var(--black); color: var(--white); }
 .dark-band .section-lead { color: #a7abad; }
 .dark-band .section-kicker p { color: #b7bbbc; }
+.custom { background: var(--black); isolation: isolate; overflow: hidden; position: relative; }
+.custom-backdrop { inset: 0; overflow: hidden; pointer-events: none; position: absolute; z-index: 0; }
+.custom-backdrop::after { background: linear-gradient(180deg, rgb(9 10 11 / 0.54) 0%, rgb(9 10 11 / 0.84) 38%, rgb(9 10 11 / 0.7) 100%), linear-gradient(90deg, rgb(9 10 11 / 0.5), transparent 62%); content: ''; inset: 0; position: absolute; }
+.custom-backdrop img { filter: saturate(0.78) contrast(1.08); height: 100%; object-fit: cover; object-position: center top; opacity: 0.76; transform: scale(1.04); width: 100%; }
+.custom > :not(.custom-backdrop) { position: relative; z-index: 1; }
 .custom-grid { display: grid; gap: clamp(38px, 7vw, 110px); grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr); }
-.custom-photo { margin: 0; min-height: 630px; overflow: hidden; position: relative; }
+.custom-photo { aspect-ratio: 4 / 3; box-shadow: 0 28px 70px rgb(0 0 0 / 0.42); margin: 0; min-height: 0; overflow: hidden; position: relative; }
+.custom-photo::before { background: linear-gradient(0deg, rgb(0 0 0 / 0.58), transparent 34%); content: ''; inset: 0; pointer-events: none; position: absolute; z-index: 1; }
 .custom-photo::after, .works-image::after, .access-image::after { border: 1px solid rgb(255 255 255 / 0.36); content: ''; inset: 14px; pointer-events: none; position: absolute; }
-.custom-photo img { height: 100%; inset: 0; object-fit: cover; object-position: 48% center; position: absolute; transform: scale(1.06); width: 100%; }
+.custom-photo img { height: 100%; inset: 0; object-fit: cover; object-position: 42% center; position: absolute; transform: scale(1.03); width: 100%; }
 .custom-photo figcaption { bottom: 28px; display: flex; font: 700 10px var(--font-geist-mono), monospace; justify-content: space-between; left: 32px; position: absolute; right: 32px; z-index: 2; }
 .custom-photo figcaption span { color: var(--acid); }
 .custom-copy { align-self: center; display: grid; gap: 26px; }
@@ -184,7 +190,7 @@ footer > a { border-bottom: 1px solid #474c4f; font-size: 10px; justify-self: en
 
 @media (max-width: 1080px) {
   .custom-grid, .works-layout { grid-template-columns: 1fr; }
-  .custom-photo, .works-image { min-height: 560px; }
+  .works-image { min-height: 560px; }
 }
 
 @media (max-width: 720px) {
@@ -209,8 +215,8 @@ footer > a { border-bottom: 1px solid #474c4f; font-size: 10px; justify-self: en
   .intro { grid-template-columns: 1fr; }
   .section-title { margin-bottom: 46px; }
   .section-title h2, .intro h2, .contact h2 { font-size: clamp(36px, 11vw, 54px); }
-  .custom-photo, .works-image, .access-image { min-height: 430px; }
-  .custom-photo img { object-position: center; transform: scale(1.1); }
+  .works-image, .access-image { min-height: 430px; }
+  .custom-photo img { object-position: 40% center; transform: scale(1.05); }
   .custom-photo figcaption { bottom: 24px; left: 24px; right: 24px; }
   .custom-photo figcaption span { display: none; }
   .photo-strip { grid-template-columns: 1fr 1fr; }
