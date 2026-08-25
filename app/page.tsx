@@ -12,16 +12,6 @@ const siteConfig = {
   },
 };
 
-const services = [
-  ['01', 'USED CAR', '中古車販売', '購入後の車検・整備・乗り換えまで見据えてご提案します。'],
-  ['02', 'PURCHASE', '買取', '次のカーライフにつながる売却相談を承ります。'],
-  ['03', 'INSPECTION', '車検', '資格を持つスタッフが、安心して乗り続けるための点検を行います。'],
-  ['04', 'MAINTENANCE', '整備・修理', '日常点検から不調の相談まで、違和感を見逃さず確認します。'],
-  ['05', 'BODY REPAIR', '板金', '状態とご希望に合わせて、納得できる修理方法をご案内します。'],
-  ['06', 'CUSTOM', 'カスタム', '一台一台の雰囲気とバランスを見ながら仕上げます。'],
-  ['07', 'INSURANCE', '各種保険', '万一に備える保険まわりもまとめて相談できます。'],
-];
-
 function lineHref() {
   return siteConfig.lineUrl || '#contact';
 }
@@ -167,16 +157,13 @@ export default function Home() {
 
       <section id="service" className="service section-pad">
         <SectionTitle number="02" eyebrow="SERVICE" title="CAR LIFE SUPPORT" lead="入口から、その先まで。クルマに関することを一貫して相談できます。" />
-        <div className="service-grid">
-          {services.map(([number, en, ja, description]) => (
-            <article key={en} className="service-card reveal">
-              <div className="service-meta"><span>{number}</span><p>{en}</p></div>
-              <h3>{ja}</h3>
-              <p className="service-description">{description}</p>
-              <i aria-hidden="true" />
-            </article>
-          ))}
-        </div>
+        <figure className="service-visual reveal">
+          <img
+            src="/concept-car-life-support.jpg"
+            alt="車の購入や買取から、車検、整備、板金、カスタム、保険までを一貫して支えるカーライフサポートのイメージ"
+            loading="lazy"
+          />
+        </figure>
       </section>
 
       <section className="price section-pad">
