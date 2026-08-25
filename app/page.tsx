@@ -94,7 +94,7 @@ export default function Home() {
           <a href="#access">ACCESS</a>
         </nav>
         <a className="header-contact" href={lineHref()} onClick={() => trackEvent('header_contact_click')}>
-          CONTACT
+          LINEで相談する
         </a>
       </header>
 
@@ -109,9 +109,12 @@ export default function Home() {
           <p className="hero-kicker"><span>CAR SERVICE</span><span>TOKUSHIMA</span></p>
           <h1>F-STYLE<span>細部まで、妥協しない。</span></h1>
           <p className="hero-lead">販売、車検、整備、板金、カスタムまで。<br />クルマのことを、ひとつの場所で。</p>
-          <div className="hero-actions">
-            <CtaLink href={lineHref()} eventName="line_cta_hero" variant="line">LINEで相談する</CtaLink>
-            <a className="text-link" href="#service">サービスを見る</a>
+          <div className="line-cta-block hero-line-cta">
+            <p className="line-cta-context">車検・整備・カスタムについて<br />お気軽にご相談ください</p>
+            <div className="hero-actions">
+              <CtaLink href={lineHref()} eventName="line_cta_hero" variant="line">LINEで相談する</CtaLink>
+              <a className="text-link" href="#service">サービスを見る</a>
+            </div>
           </div>
         </div>
         <div className="hero-facts">
@@ -149,7 +152,10 @@ export default function Home() {
               <li><span>02</span>細部のズレや違和感まで確認</li>
               <li><span>03</span>車両ごとの個性に合わせた調整</li>
             </ul>
-            <CtaLink href={lineHref()} eventName="line_cta_custom" variant="light">カスタムを相談する</CtaLink>
+            <div className="line-cta-block custom-line-cta">
+              <p className="line-cta-context">車検・整備・カスタムについて<br />お気軽にご相談ください</p>
+              <CtaLink href={lineHref()} eventName="line_cta_custom" variant="light">LINEで相談する</CtaLink>
+            </div>
           </div>
         </div>
         <div className="photo-strip" aria-label="施工・店舗写真">
@@ -221,8 +227,10 @@ export default function Home() {
       <section id="contact" className="contact section-pad">
         <p>CONTACT / RESERVATION</p>
         <h2>車のことなら、<br />まずF-styleへ。</h2>
-        <span>カスタム、車検、整備、販売、買取、板金まで。通常のご相談・ご予約はLINEから承ります。</span>
-        <CtaLink href={lineHref()} eventName="line_cta_contact" variant="line">LINEで相談・予約する</CtaLink>
+        <div className="line-cta-block contact-line-cta">
+          <p className="line-cta-context">車検・整備・カスタムについて<br />お気軽にご相談ください</p>
+          <CtaLink href={lineHref()} eventName="line_cta_contact" variant="line">LINEで相談する</CtaLink>
+        </div>
         <div className="sub-links">
           <a href={`tel:${siteConfig.shopTel}`} onClick={() => trackEvent('shop_tel_footer_click')}>店舗へ電話</a>
           <a href={siteConfig.instagramUrl || '#contact'} onClick={() => trackEvent('instagram_click')}>Instagram</a>
@@ -237,8 +245,8 @@ export default function Home() {
       </footer>
 
       <div className="mobile-fixed-cta" aria-label="スマートフォン固定CTA">
-        <a href={lineHref()} onClick={() => trackEvent('fixed_line_click')}>LINEで相談</a>
-        <a href={`tel:${siteConfig.accidentTel}`} onClick={() => trackEvent('fixed_accident_tel_click')}>事故受付 TEL</a>
+        <a href={lineHref()} onClick={() => trackEvent('fixed_line_click')}>LINEで相談する</a>
+        <a href={`tel:${siteConfig.accidentTel}`} onClick={() => trackEvent('fixed_accident_tel_click')}>事故・故障受付 TEL</a>
       </div>
     </main>
   );
