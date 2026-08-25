@@ -38,7 +38,7 @@ function CtaLink({
 }: {
   children: React.ReactNode;
   href: string;
-  variant?: 'dark' | 'light' | 'line' | 'tel';
+  variant?: 'dark' | 'light' | 'line';
   eventName: string;
 }) {
   return (
@@ -173,21 +173,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="maintenance section-pad">
-        <div className="maintenance-visual reveal">
-          <img src="/concept-service-garage.jpg" alt="車検・整備設備を表現したイメージ画像" loading="lazy" />
-          <span>QUALIFIED / EQUIPPED / RELIABLE</span>
-        </div>
-        <div className="maintenance-copy reveal">
-          <SectionTitle number="03" eyebrow="INSPECTION / MAINTENANCE" title="車検・整備も、F-styleへ。" lead="車を任せる場所だから、技術と設備で応えます。" />
-          <div className="license-list"><span>自動車検査員</span><span>2級自動車整備士</span></div>
-          <p className="body-copy">日常の整備から車検、修理の相談まで。資格に裏付けられた点検と、設備の整ったガレージで安心を支えます。</p>
-          <CtaLink href={lineHref()} eventName="line_cta_maintenance" variant="dark">車検・整備を相談する</CtaLink>
-        </div>
-      </section>
-
       <section className="price section-pad">
-        <SectionTitle number="04" eyebrow="PRICE" title="料金のご案内" lead="内容と車種を確認し、事前にわかりやすくご案内します。" />
+        <SectionTitle number="03" eyebrow="PRICE" title="料金のご案内" lead="内容と車種を確認し、事前にわかりやすくご案内します。" />
         <div className="price-grid">
           <article className="price-card reveal"><p>INSPECTION</p><h3>車検料金</h3><strong>{inspectionPrice}</strong></article>
           <article className="price-card reveal"><p>OIL CHANGE</p><h3>オイル交換料金</h3><strong>{oilPrice}</strong></article>
@@ -196,7 +183,7 @@ export default function Home() {
       </section>
 
       <section className="works section-pad">
-        <SectionTitle number="05" eyebrow="PROFESSIONAL / WORKS" title="仕事の質が見えるガレージ。" lead="資格、設備、施工の積み重ねが、F-styleの品質です。" />
+        <SectionTitle number="04" eyebrow="PROFESSIONAL / WORKS" title="仕事の質が見えるガレージ。" lead="資格、設備、施工の積み重ねが、F-styleの品質です。" />
         <div className="works-layout">
           <div className="works-image reveal"><img src="/concept-tool-detail.jpg" alt="丁寧な整備品質を表現した工具のイメージ画像" loading="lazy" /></div>
           <div className="works-copy reveal">
@@ -211,18 +198,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="accident" className="accident section-pad">
-        <div className="accident-label"><span>24H</span><p>ACCIDENT SUPPORT</p></div>
-        <div className="accident-inner reveal">
-          <h2>事故・突然のトラブルで<br />お困りの方へ。</h2>
-          <p>24時間 事故受付専用ダイヤル</p>
-          <strong>{siteConfig.accidentTel}</strong>
-          <CtaLink href={`tel:${siteConfig.accidentTel}`} eventName="accident_tel_click" variant="tel">今すぐ電話する</CtaLink>
-        </div>
-      </section>
-
       <section id="access" className="access section-pad">
-        <SectionTitle number="06" eyebrow="SHOP / ACCESS" title="徳島市国府町の、頼れる拠点。" lead="ご相談・ご予約はLINEから。事故受付は専用電話へ。" />
+        <SectionTitle number="05" eyebrow="SHOP / ACCESS" title="徳島市国府町の、頼れる拠点。" lead="ご相談・ご予約はLINEから。事故受付は専用電話へ。" />
         <div className="access-grid">
           <div className="shop-info reveal">
             <dl>

@@ -70,7 +70,7 @@ nav a:hover, .header-contact:hover { color: var(--acid); }
 .section-kicker span { align-items: center; background: var(--acid); color: var(--black); display: inline-flex; font: 800 10px var(--font-geist-mono), monospace; height: 28px; justify-content: center; width: 36px; }
 .section-kicker p { color: var(--muted); font-size: 11px; font-weight: 800; margin: 0; }
 .section-title { margin: 0 0 clamp(46px, 7vw, 94px); max-width: 1020px; }
-.section-title h2, .intro h2, .accident h2, .contact h2 { font-size: clamp(38px, 6.2vw, 86px); font-weight: 650; line-height: 1.03; margin: 0; }
+.section-title h2, .intro h2, .contact h2 { font-size: clamp(38px, 6.2vw, 86px); font-weight: 650; line-height: 1.03; margin: 0; }
 .section-lead { color: var(--muted); font-size: clamp(16px, 1.8vw, 21px); line-height: 1.8; margin: 22px 0 0; }
 
 .intro { background: var(--white); display: grid; gap: clamp(44px, 10vw, 150px); grid-template-columns: minmax(0, 1fr) minmax(300px, 0.76fr); }
@@ -84,7 +84,7 @@ nav a:hover, .header-contact:hover { color: var(--acid); }
 .dark-band .section-kicker p { color: #b7bbbc; }
 .custom-grid { display: grid; gap: clamp(38px, 7vw, 110px); grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr); }
 .custom-photo { margin: 0; min-height: 630px; overflow: hidden; position: relative; }
-.custom-photo::after, .works-image::after, .maintenance-visual::after, .access-image::after { border: 1px solid rgb(255 255 255 / 0.36); content: ''; inset: 14px; pointer-events: none; position: absolute; }
+.custom-photo::after, .works-image::after, .access-image::after { border: 1px solid rgb(255 255 255 / 0.36); content: ''; inset: 14px; pointer-events: none; position: absolute; }
 .custom-photo img { height: 100%; inset: 0; object-fit: cover; object-position: 48% center; position: absolute; transform: scale(1.06); width: 100%; }
 .custom-photo figcaption { bottom: 28px; display: flex; font: 700 10px var(--font-geist-mono), monospace; justify-content: space-between; left: 32px; position: absolute; right: 32px; z-index: 2; }
 .custom-photo figcaption span { color: var(--acid); }
@@ -116,16 +116,9 @@ nav a:hover, .header-contact:hover { color: var(--acid); }
 .service-card i::after { border-right: 1px solid currentColor; border-top: 1px solid currentColor; content: ''; height: 7px; position: absolute; right: 0; top: -3px; transform: rotate(45deg); width: 7px; }
 .service-card:last-child { grid-column: span 2; }
 
-.maintenance { background: var(--white); display: grid; gap: clamp(42px, 7vw, 100px); grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr); }
-.maintenance-visual, .works-image, .access-image { min-height: 640px; overflow: hidden; position: relative; }
-.maintenance-visual img, .works-image img, .access-image img { height: 100%; inset: 0; object-fit: cover; position: absolute; width: 100%; }
-.maintenance-visual img { object-position: center; transform: scale(1.05); }
-.maintenance-visual span, .access-image span { background: var(--acid); bottom: 0; color: var(--black); font: 800 10px var(--font-geist-mono), monospace; left: 0; padding: 14px 18px; position: absolute; z-index: 2; }
-.maintenance-copy { align-self: center; }
-.maintenance-copy .section-title { margin-bottom: 34px; }
-.license-list { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
-.license-list span { border: 1px solid #8a8e8d; font-size: 13px; font-weight: 700; padding: 11px 16px; }
-.body-copy { color: #4b5051; line-height: 1.9; margin: 0 0 32px; max-width: 620px; }
+.works-image, .access-image { min-height: 640px; overflow: hidden; position: relative; }
+.works-image img, .access-image img { height: 100%; inset: 0; object-fit: cover; position: absolute; width: 100%; }
+.access-image span { background: var(--acid); bottom: 0; color: var(--black); font: 800 10px var(--font-geist-mono), monospace; left: 0; padding: 14px 18px; position: absolute; z-index: 2; }
 
 .price { background: #dfe1dd; }
 .price-grid { display: grid; gap: 1px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -147,14 +140,6 @@ nav a:hover, .header-contact:hover { color: var(--acid); }
 .works-copy dl div, .shop-info dl div { border-top: 1px solid #3c4043; display: grid; gap: 14px; grid-template-columns: 110px 1fr; padding: 18px 0; }
 dt { color: var(--muted); font: 700 10px var(--font-geist-mono), monospace; }
 dd { margin: 0; }
-
-.accident { background: var(--red); color: #fff; display: grid; gap: 30px; grid-template-columns: 150px 1fr; }
-.accident-label { border-right: 1px solid rgb(255 255 255 / 0.45); display: flex; flex-direction: column; justify-content: space-between; }
-.accident-label span { font: 800 44px var(--font-geist-mono), monospace; }
-.accident-label p { font-size: 10px; font-weight: 800; margin: 0 0 10px; writing-mode: vertical-rl; }
-.accident-inner { padding-right: 140px; text-align: center; }
-.accident-inner p { font-size: clamp(15px, 2vw, 22px); margin: 30px 0 4px; }
-.accident-inner strong { display: block; font-size: clamp(42px, 8vw, 102px); font-weight: 700; line-height: 1; margin: 14px 0 34px; }
 
 .access { background: var(--paper); }
 .access-grid { display: grid; gap: 10px; grid-template-columns: minmax(300px, 0.8fr) minmax(0, 1.2fr); }
@@ -185,8 +170,6 @@ dd { margin: 0; }
 .cta-dark:hover { background: var(--acid); color: var(--black); }
 .cta-light { border-color: #53585b; color: var(--white); }
 .cta-light:hover { border-color: var(--acid); color: var(--acid); }
-.cta-tel { background: var(--white); color: var(--red); }
-
 footer { align-items: end; background: var(--black); border-top: 1px solid #292d30; color: var(--white); display: grid; gap: 30px; grid-template-columns: 1fr auto 1fr; padding: 40px clamp(20px, 5vw, 76px) 100px; }
 .footer-brand { display: grid; gap: 4px; }
 .footer-brand span { font-size: 24px; font-weight: 900; }
@@ -205,9 +188,8 @@ footer > a { border-bottom: 1px solid #474c4f; font-size: 10px; justify-self: en
 
 @media (max-width: 1080px) {
   .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .custom-grid, .maintenance, .works-layout { grid-template-columns: 1fr; }
-  .custom-photo, .maintenance-visual, .works-image { min-height: 560px; }
-  .accident-inner { padding-right: 40px; }
+  .custom-grid, .works-layout { grid-template-columns: 1fr; }
+  .custom-photo, .works-image { min-height: 560px; }
 }
 
 @media (max-width: 720px) {
@@ -230,8 +212,8 @@ footer > a { border-bottom: 1px solid #474c4f; font-size: 10px; justify-self: en
   .section-pad { padding: 82px 20px; }
   .intro { grid-template-columns: 1fr; }
   .section-title { margin-bottom: 46px; }
-  .section-title h2, .intro h2, .accident h2, .contact h2 { font-size: clamp(36px, 11vw, 54px); }
-  .custom-photo, .maintenance-visual, .works-image, .access-image { min-height: 430px; }
+  .section-title h2, .intro h2, .contact h2 { font-size: clamp(36px, 11vw, 54px); }
+  .custom-photo, .works-image, .access-image { min-height: 430px; }
   .custom-photo img { object-position: center; transform: scale(1.1); }
   .custom-photo figcaption { bottom: 24px; left: 24px; right: 24px; }
   .custom-photo figcaption span { display: none; }
@@ -245,13 +227,8 @@ footer > a { border-bottom: 1px solid #474c4f; font-size: 10px; justify-self: en
   .service-card h3 { margin-top: 38px; }
   .price-grid, .access-grid { grid-template-columns: 1fr; }
   .price-card { min-height: 245px; }
-  .maintenance-visual img, .works-image img, .access-image img { transform: scale(1.1); }
+  .works-image img, .access-image img { transform: scale(1.1); }
   .works-copy dl div, .shop-info dl div { grid-template-columns: 1fr; }
-  .accident { gap: 30px; grid-template-columns: 1fr; }
-  .accident-label { border-bottom: 1px solid rgb(255 255 255 / 0.45); border-right: 0; flex-direction: row; padding-bottom: 20px; }
-  .accident-label p { margin: 0; writing-mode: horizontal-tb; }
-  .accident-inner { padding: 0; }
-  .accident-inner strong { font-size: clamp(38px, 11vw, 56px); }
   .contact { min-height: auto; padding-bottom: 100px; }
   .sub-links { flex-direction: column; gap: 14px; }
   footer { align-items: start; grid-template-columns: 1fr; padding-bottom: 112px; }
