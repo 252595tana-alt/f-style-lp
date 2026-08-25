@@ -20,14 +20,14 @@ export const metadata: Metadata = {
     title: 'F-style｜徳島市国府町のカーライフショップ',
     description:
       'カスタム、車検、整備、中古車販売まで。徳島市国府町を中心に地域のカーライフを支えます。',
-    images: ['/proposal-overview.png'],
+    images: ['/instagram-grid-01.png'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'F-style｜徳島市国府町のカーライフショップ',
     description:
       'カスタム、車検、整備、中古車販売まで。徳島市国府町を中心に地域のカーライフを支えます。',
-    images: ['/proposal-overview.png'],
+    images: ['/instagram-grid-01.png'],
   },
 };
 
