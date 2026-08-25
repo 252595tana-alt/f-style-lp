@@ -116,6 +116,9 @@ export default function Home() {
       </section>
 
       <section id="concept" className="intro section-pad">
+        <div className="intro-backdrop" aria-hidden="true">
+          <img src="/custom-lifestyle.jpg" alt="" />
+        </div>
         <div className="intro-statement reveal">
           <div className="section-kicker dark-ink"><span>00</span><p>OUR PHILOSOPHY</p></div>
           <h2>クルマを、<br />もっと自分らしく。</h2>
@@ -134,7 +137,7 @@ export default function Home() {
         <SectionTitle number="01" eyebrow="CUSTOM" title="CUSTOM IS IN THE DETAILS." lead="見た目だけでは終わらない。乗るたびに違いが伝わる、一台へ。" />
         <div className="custom-grid">
           <figure className="custom-photo reveal">
-            <img src="/custom-premium-car.jpg" alt="夕景に映える上質なカスタム車両のイメージ" loading="lazy" />
+            <img src="/concept-custom-car.jpg" alt="カスタム車両を表現したイメージ画像" loading="lazy" />
             <figcaption><span>DETAIL / 001</span> BUILT WITH BALANCE</figcaption>
           </figure>
           <div className="custom-copy reveal">
@@ -151,9 +154,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="photo-strip" aria-label="カスタムと上質なカーライフのイメージ">
-          <figure className="photo-wide reveal"><img src="/custom-lifestyle.jpg" alt="上質なカーライフを表現する空間のイメージ" loading="lazy" /></figure>
-          <figure className="photo-tall reveal"><img src="/custom-luxury-bg.jpg" alt="黒とゴールドの上質な質感イメージ" loading="lazy" /></figure>
+        <div className="photo-strip" aria-label="施工・店舗写真">
+          <figure className="photo-wide reveal"><img src="/concept-custom-car.jpg" alt="洗練されたカスタム車両のイメージ画像" loading="lazy" /></figure>
+          <figure className="photo-tall reveal"><img src="/concept-service-garage.jpg" alt="整備ガレージのイメージ画像" loading="lazy" /></figure>
           <figure className="photo-detail reveal"><img src="/concept-tool-detail.jpg" alt="整備工具のイメージ画像" loading="lazy" /></figure>
         </div>
       </section>
